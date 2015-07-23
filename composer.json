@@ -13,11 +13,19 @@
         {
             "name": "Thomas Jarrand",
             "homepage": "https://github.com/Tom32i"
+        },
+        {
+            "name": "Damian Dlugosz",
+            "homepage": "https://github.com/bigfoot90"
         }
+    ],
+    "repositories": [
+        { "type": "vcs", "url": "git@bitbucket.org:bestnetwork/utility.git" }
     ],
     "require": {
         "symfony/framework-bundle": "~2.6",
-        "symfony/form": "~2.6"
+        "symfony/form": "~2.6",
+        "bestnetwork/utility": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
