@@ -44,8 +44,9 @@ class Configuration implements ConfigurationInterface
                             $this->addKeysConfig(
                                 'form',
                                 array(
-                                    'label' => "label",
-                                    'help'  => "help",
+                                    'label'        => "label",
+                                    'help'         => "help",
+                                    'placeholder'  => 'placeholder',
                                 )
                             )
                         )
