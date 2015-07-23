@@ -10,8 +10,7 @@
 
 namespace Elao\Bundle\FormTranslationBundle\Builders;
 
-use Symfony\Component\Form\FormInterface;
-use Symfony\Component\Form\FormView;
+use Best\Utility\Inflector;
 
 use Elao\Bundle\FormTranslationBundle\Model\FormTree;
 
@@ -87,7 +86,7 @@ class FormKeyBuilder
         foreach ($tree as $index => $node) {
 
             if (!$node->isPrototype()) {
-                $key[] = $node->getName();
+                $key[] = Inflector::underscore($node->getName());
             }
 
             $children = false;
